@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}    
+.mainVideo iframe{
+    width: 320px;
+    height: 240px;
+}  
+
+
+
+body{
+    min-height: 100vh;
+    background-color: #000;
+    position: relative; 
+    padding-bottom: 5rem;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+a {
+    color: #fff;
+    overflow-x: hidden;
+}
+/*°°°°°°°°°°°°°°°°°° CLASES PARA MEDIAQUERIS °°°°°°°°°*/
+.mobile{
+    display: none;
+}
+
+
+/* DESKTOP HEADER */
+.cabeceraDesktop{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.cabeceraDesktop > img{
+    width: 20rem;
+    height: auto;
+    padding-top: 1rem;
+    margin: auto;
+
+    object-fit: cover;
+
+}
+
+/* DESKTOP NAV (su contenedor es Flex) */
+.navDesktop ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navDesktop a{
+    text-decoration:none;
+    color:inherit;
+    font-size: 1.2rem;
+} 
+.navDesktop li{
+    display:inline-block;
+    width:20vw;
+    height: fit-content;
+    padding: 1% 0;
+    border-bottom:1px solid #fff;
+    text-align:center;
+    color:#fff;
+}
+.navDesktop li:hover{
+    background-color:#fff;
+    color:#000;
+}
+/*°°°°°°°°°°°°°°°°°°   BANNER     °°°°°°°°°°°°°°°°°° */
+.bannerDesktop{
+    width: 100vw;
+    height: 25.8171296296vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.bannerDesktop img{
+    height: 100%;
+    object-fit: contain;
+}
+
+/*°°°°°°°°°°°°°°°°°° MAIN TEXTO °°°°°°°°°°°°°°°°°°  */
+/* Se estima que esta clase sea manejada con rem y estilizada por los mediaqueris */
+.titulo{
+    font-family: sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 700;
+    line-height: 48px;
+    margin: 4vh 0;
+}
+
+.subtitulo{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.anuncio{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cuerpo{
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: start;
+    line-height: 2;
+}
+
+.contTextoPrimerBloque{
+    width: 80vw;
+    margin: 4rem 10vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*°°°°°°°°°°°°°°°°°° MAIN CONTENIDO °°°°°°°°°°°°°°°°*/
+/* Las clases del main estan pensadas para que sirvan en todos los mediaqueris (en teoria Lisa, en teoria) */
+.contMainInfo{
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 21rem;
+    grid-template-rows: 1fr 4rem;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.himno{
+
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+
+.mainInfoLocal{
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+.enlaceWsp{
+    display: flex;
+    font-size: 1rem;
+    outline: none;
+    text-decoration: none;
+    width: 180px;
+    height: fit-content;
+
+    grid-column: 2;
+    grid-row: 2;
+
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color:#fff;
+    border-radius: 10px;
+    padding: 2px 12px;   
+    margin: auto;
+}
+.mainVender{
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    border: solid 4px white;
+    margin: 3rem auto;
+    border-radius: 40px;
+}
+
+.mainVender > p{
+    width: 100%;
+    flex-grow: 1;
+    margin: auto 3rem;
+}
+
+.contPeticion{
+    width: 90vw;
+    padding:3rem 5vw
+}
+/* ================ Formularios ================ */
+.formVender{
+    width: 90%;
+    flex-grow: 2;
+    margin: auto;
+}
+
+.mainForm{
+    background-color: rgb(29, 29, 29);
+    width: 80vw;
+    margin: auto;
+    list-style-type: none;
+    border-radius: 3px; 
+}
+.form-row{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+.form-row > label{
+    padding: .5em 1em .5em 0;
+}
+.form-row > input{
+    flex: 1;
+}
+.form-row > input, .form-row > button{
+    padding: .5em;
+}
+.form-row > button{
+   background: gray;
+   color: white;
+   border: 0;
+}
+
+/*°°°°°°°°°°°°°°°°°° GALERIA °°°°°°°°°°°°°°°°°°*/
+/* Galeria solo estara disponible en la Version Desktop */
+.contGaleria{
+    width: 100vw;
+    height: fit-content;
+    padding:  0;
+    margin: auto;
+    background-image:url(./asses/fondo.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    
+.galeria{
+    padding: 10% 0;
+    width: 80%;
+    margin:auto;  
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 16px;
+    grid-auto-flow: dense;
+    justify-content: center;
+    align-content: end;
+}
+
+.galeria > div > img{
+    width: 100%;
+}
+
+.itemGaleria{    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.itemGaleriaWide{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.itemEscrito{
+    width: 70%;
+    height: fit-content;
+    z-index: 13;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    align-items: flex-end;
+    justify-content: end;
+    font-size: .8rem;
+}
+
+.tituloAnuncioGaleria{
+
+font-family: 'Nexa Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+line-height: 66%;
+padding: .2rem;
+
+background: linear-gradient(90deg, #FF5C2F 13.57%, #FFC967 34.69%, #FBAE42 51.85%, #FFEFA0 67.91%, #9AD3A4 78.03%, #B3B6EB 92.77%, #D1BDE8 102.74%), linear-gradient(90deg, #9B2116 -1.66%, rgba(0, 208, 21, 0) 102.74%);
+
+-webkit-text-fill-color: transparent;
+/* -webkit-background-clip: text; */
+/* solucionar error de consola */
+}
+
+.newsletter{
+    grid-column: span 2;
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    background-color: #B54790;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    padding-top: .8rem;
+    color: white;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    vertical-align: center;
+}
+.footerItems{
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding-bottom: .6rem;
+}
+
+footer a img{
+    width: 3rem;
+    padding-bottom: .5rem;
+    flex-grow: 2;
+}
+
+footer div{
+    flex-grow: 1;
+}
+
+footer div:first-child{
+    flex-grow: 4;
+    padding-left: 1.9rem;
+}
+
+
