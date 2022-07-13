@@ -74,7 +74,11 @@ a {
 .navDesktop li:hover{
     background-color:#fff;
     color:#000;
+
+    transition: all 1.5s ;
+
 }
+
 /*°°°°°°°°°°°°°°°°°°   BANNER     °°°°°°°°°°°°°°°°°° */
 .bannerDesktop{
     width: 100vw;
@@ -193,6 +197,11 @@ a {
     border-radius: 10px;
     padding: 2px 12px;   
     margin: auto;
+    transition: all 2s;
+}
+
+.enlaceWsp:hover{
+    transform: scale(1.1);
 }
 
 .mainVender{
@@ -215,6 +224,8 @@ a {
     width: 90vw;
     padding:3rem 5vw
 }
+
+
 /* ================ Formularios ================ */
 .formVender{
     width: 90%;
@@ -285,8 +296,13 @@ a {
     height: 100%;
     object-fit: contain;
     background-repeat: no-repeat;
+    transition: all .2s; /* Animation */
 }
 
+.itemGaleria:hover{
+   transform: scale(1.2);
+
+}
 .itemGaleriaWide{
     grid-column-start: 5;
     grid-column-end: 9;
@@ -297,7 +313,12 @@ a {
     height: 100%;
     object-fit: contain;
     background-repeat: no-repeat;
+    transition: all .2s; /* Animation */
 }
+
+.itemGaleriaWide:hover{
+    transform: translateY(2rem);
+ }
 
 .itemEscrito{
     width: 70%;
